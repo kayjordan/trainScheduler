@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+
+
+<style>
+
+    .jumbotron { 
+
+        text-align: center;
+        background-color: brown; 
+        color: white;
+    }
+
+
+</style>
+
+
+<body>
+
+    <div class = "container">
+        <div class="jumbotron">
+                <h1 class="display-4">Any Time is Train Time</h1>
+                <h2 class="lead">Choo Choo Chee Chee</h2>
+        </div>
+
+
+        <div class="container" style="border:1px grey solid;">
+          <table class="table">
+        </table>
+        </div>    
+
+        <div class="container" id="trainDisplayChart" style="border:1px grey solid;">
+                <table class="table" id="onlyTable">
+                    <thead>
+                      <tr>
+                        <th scope="col" id="trainTitle">Train Name</th>
+                        <th scope="col" id="desinationTitle">Destination</th>
+                        <th scope="col" id="freqencyTitle">Frequency (min)</th>
+                        <th scope="col" id="nextArrivalTitle">Next Arrival</th>
+                        <th scope="col" id="minutesAwayTitle">Minutes Away</th>
+
+                      </tr>
+
+
+
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"id="trainDisplay"></th>
+                        <td id="destinationDisplay"></td>
+                        <td id="freqencyDisplay"></td>
+                        <td id="nextArrivalDisplay"></td>
+                        <td id="minutesAwayDisplay"></td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+
+
+
+
+        <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Train Name</label>
+                  <input type="" class="form-control" id="trainNameInput" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Destination</label>
+                  <input type="emailHelp" class="form-control" id="destinationInput">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">First Train Time (HH:mm - military time</label>
+                    <input type="emailHelp" class="form-control" id="firstTimeInput">
+                  </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Frequency (min)</label>
+                        <input type="emailHelp" class="form-control" id="frequencyInput">
+                      </div>
+      
+                <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+              </form>
+
+    </div>      
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+
+<script src="assets/code.js"></script>
+
+
+
+
+</body>
+</html>
